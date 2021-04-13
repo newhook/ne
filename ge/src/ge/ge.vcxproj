@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94BF169E-C425-4EF7-B1BB-0413530426FD}</ProjectGuid>
+    <RootNamespace>ge</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/SFML/include;$(SolutionDir)/extern/SFML/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;SFML_STATIC;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/SFML/include;$(SolutionDir)/extern/SFML/include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>GLEW_STATIC;SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Bounds.h" />
+    <ClInclude Include="Cubemap.h" />
+    <ClInclude Include="LineGeom.h" />
+    <ClInclude Include="Lines.h" />
+    <ClInclude Include="LinesR.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MeshGeom.h" />
+    <ClInclude Include="MeshR.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="PGeom.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Exception.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="gl.h" />
+    <ClInclude Include="InputStream.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="PsShader.h" />
+    <ClInclude Include="Ray3.h" />
+    <ClInclude Include="Rectangle2.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="RenderContext.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RenderQueue.h" />
+    <ClInclude Include="RenderSettings.h" />
+    <ClInclude Include="ShaderAttribute.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="ShaderUniform.h" />
+    <ClInclude Include="SkinMeshR.h" />
+    <ClInclude Include="TextureSettings.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Uniform.h" />
+    <ClInclude Include="VsShader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Bounds.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Cubemap.cpp" />
+    <ClCompile Include="Exception.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="InputStream.cpp" />
+    <ClCompile Include="jsoncpp.cpp" />
+    <ClCompile Include="LineGeom.cpp" />
+    <ClCompile Include="Lines.cpp" />
+    <ClCompile Include="LinesR.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MeshGeom.cpp" />
+    <ClCompile Include="MeshR.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="PGeom.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PsShader.cpp" />
+    <ClCompile Include="Ray3.cpp" />
+    <ClCompile Include="Rectangle2.cpp" />
+    <ClCompile Include="Renderable.cpp" />
+    <ClCompile Include="RenderContext.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderQueue.cpp" />
+    <ClCompile Include="RenderSettings.cpp" />
+    <ClCompile Include="ShaderAttribute.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="ShaderUniform.cpp" />
+    <ClCompile Include="SkinMeshR.cpp" />
+    <ClCompile Include="TextureSettings.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Uniform.cpp" />
+    <ClCompile Include="VsShader.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

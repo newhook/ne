@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{655A737E-0196-4B4B-8EBC-64378A322D7F}</ProjectGuid>
+    <RootNamespace>wc</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/assimp/include;$(SolutionDir)/wc/src;$(SolutionDir)/extern/artemis;$(SolutionDir)/extern/assimp-3.1.1/include;$(SolutionDir)/extern/SFML/include;$(SolutionDir)/extern/fbx/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>FBXSDK_SHARED;GLEW_STATIC;SFML_STATIC;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Config.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/extern/SFML/extlibs/libs-msvc/x86;$(SolutionDir)/extern/fbx/lib/;$(SolutionDir)/extern/fbx/lib/</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfbxsdk.lib;libfbxsdk.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;openal32.lib;sndfile.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/assimp/include;$(SolutionDir)/wc/src;$(SolutionDir)/extern/artemis;$(SolutionDir)/extern/assimp-3.1.1/include;$(SolutionDir)/extern/SFML/include;$(SolutionDir)/extern/fbx/include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>FBXSDK_SHARED;GLEW_STATIC;SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libfbxsdk.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;openal32.lib;sndfile.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\matthew\workspace\ne\extern\glew-1.10.0\lib\Release\Win32;$(SolutionDir)/extern/SFML/extlibs/libs-msvc/x86;$(SolutionDir)/extern/fbx/lib/</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src/Application.cpp" />
+    <ClCompile Include="src/EntityFactory.cpp" />
+    <ClCompile Include="src/main.cpp" />
+    <ClCompile Include="src/Resource.cpp" />
+    <ClCompile Include="src\bullet\BulletDebug.cpp" />
+    <ClCompile Include="src\bullet\BulletUtil.cpp" />
+    <ClCompile Include="src\component\AnimationComponent.cpp" />
+    <ClCompile Include="src\component\CreepComponent.cpp" />
+    <ClCompile Include="src\component\ExpireComponent.cpp" />
+    <ClCompile Include="src\component\ObstructionComponent.cpp" />
+    <ClCompile Include="src\component\PathComponent.cpp" />
+    <ClCompile Include="src\component\PhysicsComponent.cpp" />
+    <ClCompile Include="src\component\PlayerComponent.cpp" />
+    <ClCompile Include="src\component\ProjectileComponent.cpp" />
+    <ClCompile Include="src\component\RenderComponent.cpp" />
+    <ClCompile Include="src\component\ScaleComponent.cpp" />
+    <ClCompile Include="src\component\TargetComponent.cpp" />
+    <ClCompile Include="src\component\TerrainComponent.cpp" />
+    <ClCompile Include="src\component\TowerComponent.cpp" />
+    <ClCompile Include="src\component\TransformComponent.cpp" />
+    <ClCompile Include="src\Config.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\micropather.cpp" />
+    <ClCompile Include="src\system\AnimationSystem.cpp" />
+    <ClCompile Include="src\system\CreepSystem.cpp" />
+    <ClCompile Include="src\system\EffectSystem.cpp" />
+    <ClCompile Include="src\system\ExpirationSystem.cpp" />
+    <ClCompile Include="src\system\PathFinderSystem.cpp" />
+    <ClCompile Include="src\system\PathSystem.cpp" />
+    <ClCompile Include="src\system\PhysicsSystem.cpp" />
+    <ClCompile Include="src\system\PlayerSystem.cpp" />
+    <ClCompile Include="src\system\ProjectileSystem.cpp" />
+    <ClCompile Include="src\system\RenderSystem.cpp" />
+    <ClCompile Include="src\system\TowerSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders/axis.frag" />
+    <None Include="models/axis.nff" />
+    <None Include="shaders/axis.vert" />
+    <None Include="shaders/bullet.frag" />
+    <None Include="shaders/bullet.vert" />
+    <None Include="shaders/debug.frag" />
+    <None Include="shaders/debug.vert" />
+    <None Include="shaders/shaders.json" />
+    <None Include="shaders\flipbook.frag" />
+    <None Include="shaders\flipbook.vert" />
+    <None Include="shaders\lambert.frag" />
+    <None Include="shaders\lambert.vert" />
+    <None Include="shaders\phong.frag" />
+    <None Include="shaders\phong.vert" />
+    <None Include="shaders\phong_sk.vert" />
+    <None Include="shaders\terrain.frag" />
+    <None Include="shaders\terrain.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src/Application.h" />
+    <ClInclude Include="src/EntityFactory.h" />
+    <ClInclude Include="src/Resource.h" />
+    <ClInclude Include="src\bullet\BulletDebug.h" />
+    <ClInclude Include="src\bullet\BulletUtil.h" />
+    <ClInclude Include="src\component\AnimationComponent.h" />
+    <ClInclude Include="src\component\CreepComponent.h" />
+    <ClInclude Include="src\component\ExpireComponent.h" />
+    <ClInclude Include="src\component\ObstructionComponent.h" />
+    <ClInclude Include="src\component\PathComponent.h" />
+    <ClInclude Include="src\component\PhysicsComponent.h" />
+    <ClInclude Include="src\component\PlayerComponent.h" />
+    <ClInclude Include="src\component\ProjectileComponent.h" />
+    <ClInclude Include="src\component\RenderComponent.h" />
+    <ClInclude Include="src\component\ScaleComponent.h" />
+    <ClInclude Include="src\component\TargetComponent.h" />
+    <ClInclude Include="src\component\TerrainComponent.h" />
+    <ClInclude Include="src\component\TowerComponent.h" />
+    <ClInclude Include="src\component\TransformComponent.h" />
+    <ClInclude Include="src\Config.h" />
+    <ClInclude Include="src\micropather.h" />
+    <ClInclude Include="src\system\AnimationSystem.h" />
+    <ClInclude Include="src\system\CreepSystem.h" />
+    <ClInclude Include="src\system\EffectSystem.h" />
+    <ClInclude Include="src\system\ExpirationSystem.h" />
+    <ClInclude Include="src\system\PathFinderSystem.h" />
+    <ClInclude Include="src\system\PathSystem.h" />
+    <ClInclude Include="src\system\PhysicsSystem.h" />
+    <ClInclude Include="src\system\PlayerSystem.h" />
+    <ClInclude Include="src\system\ProjectileSystem.h" />
+    <ClInclude Include="src\system\RenderSystem.h" />
+    <ClInclude Include="src\system\TowerSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\extern\artemis\artemis.vcxproj">
+      <Project>{2c74e23b-de4d-4868-8169-14165cd82c7d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\assimp\code\assimp.vcxproj">
+      <Project>{8f0530a8-5c40-409d-ac5c-b255a13020d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\bullet\build\vs2010\BulletCollision.vcxproj">
+      <Project>{a35d3ad2-d199-314b-a39a-01f08712a395}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\bullet\build\vs2010\BulletDynamics.vcxproj">
+      <Project>{cdd0b7fa-1392-a844-bce9-4d83c4a1e2a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\bullet\build\vs2010\LinearMath.vcxproj">
+      <Project>{c9d350a2-b4e6-d647-9608-5a435d3eaaa5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\glew-1.10.0\build\vc10\glew_static.vcxproj">
+      <Project>{664e6f0d-6784-4760-9565-d54f8eb1edf4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\extern\SFML\sfml\sfml.vcxproj">
+      <Project>{6d829b49-9434-46ea-b600-f70b68d0ef80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ge\src\ge\ge.vcxproj">
+      <Project>{94bf169e-c425-4ef7-b1bb-0413530426fd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

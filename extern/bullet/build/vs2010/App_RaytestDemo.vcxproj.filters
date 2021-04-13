@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{F0424F05-7FBD-A64F-8A8E-38408072A18B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\RaytestDemo">
+      <UniqueIdentifier>{64C33866-4658-6648-8B68-D4320017779A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Demos\RaytestDemo\RaytestDemo.h">
+      <Filter>Demos\RaytestDemo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Demos\RaytestDemo\main.cpp">
+      <Filter>Demos\RaytestDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\RaytestDemo\RaytestDemo.cpp">
+      <Filter>Demos\RaytestDemo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Demos\RaytestDemo\Win32RaytestDemo.cpp">
+      <Filter>Demos\RaytestDemo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\bullet.rc" />
+  </ItemGroup>
+</Project>

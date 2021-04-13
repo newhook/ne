@@ -1,0 +1,37 @@
+{
+    "path": "shaders",
+	"shaders": {
+		"axis": {
+			"frag": "axis.frag",
+			"vert": "axis.vert"
+		},
+		"terrain": {
+			"frag": "terrain.frag",
+			"vert": "terrain.vert"
+		},
+		"lambert": {
+			"frag": "lambert.frag",
+			"vert": "lambert.vert"
+		},
+		"phong": {
+			"frag": "phong.frag",
+			"vert": "phong.vert"
+		},
+		"phong_sk": {
+			"frag": "phong.frag",
+			"vert": "phong_sk.vert"
+		},
+		"flipbook": {
+			"frag": "flipbook.frag",
+			"vert": "flipbook.vert"
+		},
+		"debug": {
+			"frag": "debug.frag",
+			"vert": "debug.vert"
+		},
+		"bullet": {
+			"frag": "bullet.frag",
+			"vert": "bullet.vert"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"shaders": {
+		"debug": {
+			"frag": "debug.frag",
+			"vert": "debug.vert"
+		},
+		"diffuse": {
+			"frag": "box.frag",
+			"vert": "box.vert"
+		},
+		"diffuse_vl": {
+			"frag": "box_dpl.frag",
+			"vert": "box_dpl.vert"
+		}
+	}
+}

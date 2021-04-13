@@ -1,0 +1,8 @@
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Audio/CMakeFiles/sfml-audio.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Main/CMakeFiles/sfml-main.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Network/CMakeFiles/sfml-network.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/System/CMakeFiles/sfml-system.dir
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Window/CMakeFiles/sfml-window.dir

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src/Application.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src/EntityFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src/main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src/Resource.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\ExpireComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\PhysicsComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\RenderComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\TransformComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\ExpirationSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\PhysicsSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\RenderSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\BulletDebug.cpp">
+      <Filter>Source\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bullet\BulletUtil.cpp">
+      <Filter>Source\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\PlayerSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\PlayerComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\TerrainComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\TowerComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\CreepComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\CreepSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\TowerSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\TargetComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\ObstructionComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\micropather.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\ProjectileComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\ProjectileSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\ScaleComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\EffectSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\PathFinderSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\system\PathSystem.cpp">
+      <Filter>Source\system</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\PathComponent.cpp">
+      <Filter>Source\component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\component\AnimationComponent.cpp" />
+    <ClCompile Include="src\system\AnimationSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src/Application.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src/EntityFactory.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src/Resource.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\ExpireComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\PhysicsComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\RenderComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\TransformComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\ExpirationSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\PhysicsSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\RenderSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\BulletDebug.h">
+      <Filter>Source\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bullet\BulletUtil.h">
+      <Filter>Source\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\PlayerSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\PlayerComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\TerrainComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\TowerComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\CreepComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\CreepSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\TowerSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\TargetComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\ObstructionComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\micropather.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\ProjectileComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\ProjectileSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\ScaleComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\EffectSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\PathFinderSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\system\PathSystem.h">
+      <Filter>Source\system</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\PathComponent.h">
+      <Filter>Source\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\component\AnimationComponent.h" />
+    <ClInclude Include="src\system\AnimationSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders/axis.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/bullet.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="models/axis.nff">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/axis.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/bullet.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/debug.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/shaders.json">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders/debug.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\terrain.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\terrain.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\lambert.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\lambert.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\phong.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\phong.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\flipbook.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\flipbook.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\phong_sk.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{95534029-1ddf-4085-96ae-6ee3567552f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\system">
+      <UniqueIdentifier>{950faffa-14b7-4dac-bee4-96df57b158c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\component">
+      <UniqueIdentifier>{92256218-dc8e-40ae-8c89-7cb4a1f57a91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\bullet">
+      <UniqueIdentifier>{fcf78b42-43e9-4198-ac04-82e21f0cb07d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{56d26393-0196-402a-9f54-9a79019c78d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

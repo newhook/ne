@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="artemis\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\ComponentType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\ComponentTypeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\DelayedEntityProcessingSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\DelayedEntitySystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\EntityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\EntityProcessingSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\EntitySystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\GroupManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\SystemBitManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\TagManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\Aspect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artemis\Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="artemis\Aspect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\Manager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\Component.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\ComponentMapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\ComponentType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\ComponentTypeManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\DelayedEntityProcessingSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\DelayedEntitySystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\Entity.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\EntityManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\EntityProcessingSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\EntitySystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\GroupManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\SystemBitManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\TagManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\World.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artemis\Artemis.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

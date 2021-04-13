@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6519BDEF-0334-40B1-87EC-2B53EA70C517}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>sfml-graphics</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sfml-graphics.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sfml-graphics-d-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sfml-graphics.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sfml-graphics-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sfml-graphics.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sfml-graphics-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sfml-graphics.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sfml-graphics-2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR="Debug";SFML_GRAPHICS_EXPORTS;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR=\"Debug\";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\lib\Debug\sfml-window-d.lib;..\..\..\lib\Debug\sfml-system-d.lib;..\..\..\..\extlibs\libs-msvc\x86\freetype.lib;..\..\..\..\extlibs\libs-msvc\x86\glew.lib;..\..\..\..\extlibs\libs-msvc\x86\jpeg.lib;opengl32.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/Debug/sfml-graphics-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/Debug/sfml-graphics-d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR="Release";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR=\"Release\";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\lib\Release\sfml-window.lib;..\..\..\lib\Release\sfml-system.lib;..\..\..\..\extlibs\libs-msvc\x86\freetype.lib;..\..\..\..\extlibs\libs-msvc\x86\glew.lib;..\..\..\..\extlibs\libs-msvc\x86\jpeg.lib;opengl32.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/Release/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/Release/sfml-graphics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR="MinSizeRel";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR=\"MinSizeRel\";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\lib\MinSizeRel\sfml-window.lib;..\..\..\lib\MinSizeRel\sfml-system.lib;..\..\..\..\extlibs\libs-msvc\x86\freetype.lib;..\..\..\..\extlibs\libs-msvc\x86\glew.lib;..\..\..\..\extlibs\libs-msvc\x86\jpeg.lib;opengl32.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/MinSizeRel/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/MinSizeRel/sfml-graphics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR="RelWithDebInfo";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;GLEW_STATIC;STBI_FAILURE_USERMSG;CMAKE_INTDIR=\"RelWithDebInfo\";SFML_GRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\libfreetype\windows;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\extlibs\headers\jpeg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\lib\RelWithDebInfo\sfml-window.lib;..\..\..\lib\RelWithDebInfo\sfml-system.lib;..\..\..\..\extlibs\libs-msvc\x86\freetype.lib;..\..\..\..\extlibs\libs-msvc\x86\glew.lib;..\..\..\..\extlibs\libs-msvc\x86\jpeg.lib;opengl32.lib;winmm.lib;gdi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/RelWithDebInfo/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/lib/RelWithDebInfo/sfml-graphics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\src\SFML\Graphics\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-file C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-file C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-file C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-file C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Graphics/CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\GLCheck.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\ImageLoader.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Rect.inl" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\TextureSaver.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\View.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\RenderTextureImpl.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\RenderTextureImplFBO.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\RenderTextureImplDefault.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\stb_image\stb_image.h" />
+    <ClInclude Include="..\..\..\..\src\SFML\Graphics\stb_image\stb_image_write.h" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Color.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Font.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\GLCheck.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Image.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\ImageLoader.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderStates.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderTarget.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderWindow.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Shader.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Texture.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\TextureSaver.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Transform.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Transformable.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\View.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Vertex.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Shape.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\CircleShape.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RectangleShape.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\ConvexShape.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Sprite.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\Text.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\VertexArray.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderTextureImpl.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderTextureImplFBO.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Graphics\RenderTextureImplDefault.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/ZERO_CHECK.vcxproj">
+      <Project>53694F24-ADAE-4CFA-813A-A0AEB6E0C770</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/System/sfml-system.vcxproj">
+      <Project>9C4C5F0F-7D89-4DB0-AB2D-BB56948B9229</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/src/SFML/Window/sfml-window.vcxproj">
+      <Project>3B2A2389-F713-4B0B-8319-41916AB015FF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

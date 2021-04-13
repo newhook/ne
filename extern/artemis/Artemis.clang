@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClangCodeCompletion>
+  <Configuration Name="">
+    <std_string_set Name="m_macros">
+      <SetEntry>_ARTEMIS_DEBUG</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_searchPaths">
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis/src</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_frameworks"/>
+  </Configuration>
+  <Configuration Name="Debug">
+    <std_string_set Name="m_macros">
+      <SetEntry>NDEBUG</SetEntry>
+      <SetEntry>_ARTEMIS_DEBUG</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_searchPaths">
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis/src</SetEntry>
+      <SetEntry>src</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_frameworks"/>
+  </Configuration>
+  <Configuration Name="Dynamic Library">
+    <std_string_set Name="m_macros">
+      <SetEntry/>
+      <SetEntry>_ARTEMIS_DEBUG</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_searchPaths">
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis/src</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/ArtemisTest</SetEntry>
+      <SetEntry>src</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_frameworks"/>
+  </Configuration>
+  <Configuration Name="Release">
+    <std_string_set Name="m_macros">
+      <SetEntry>NDEBUG</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_searchPaths">
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis/src</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/ArtemisTest</SetEntry>
+      <SetEntry>src</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_frameworks"/>
+  </Configuration>
+  <Configuration Name="Static library">
+    <std_string_set Name="m_macros">
+      <SetEntry>_ARTEMIS_DEBUG</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_searchPaths">
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/Artemis/src</SetEntry>
+      <SetEntry>C:/Users/Sidar/Documents/Sidar/C++/ST/ArtemisTest</SetEntry>
+      <SetEntry>src</SetEntry>
+    </std_string_set>
+    <std_string_set Name="m_frameworks"/>
+  </Configuration>
+</ClangCodeCompletion>

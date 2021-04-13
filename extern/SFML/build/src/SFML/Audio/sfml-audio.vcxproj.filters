@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\ALCheck.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\AudioDevice.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\Listener.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\Music.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\Sound.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundBufferRecorder.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundRecorder.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\SFML\Audio\SoundStream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\SFML\Audio\ALCheck.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Audio\AudioDevice.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="..\..\..\..\src\SFML\Audio\SoundFile.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="..\..\..\..\include\SFML\Audio\SoundStream.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\src\SFML\Audio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

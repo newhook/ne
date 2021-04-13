@@ -1,0 +1,40 @@
+{
+	"shaders": {
+		"axis": {
+			"frag": "axis.frag",
+			"vert": "axis.vert"
+		},
+		"teapot": {
+			"frag": "teapot.frag",
+			"vert": "teapot.vert"
+		},
+		"asteroid": {
+			"frag": "asteroid.frag",
+			"vert": "asteroid.vert"
+		},
+		"uni_outer": {
+			"frag": "uni_outer.frag",
+			"vert": "uni_outer.vert"
+		},
+		"uni_inner": {
+			"frag": "uni_inner.frag",
+			"vert": "uni_inner.vert"
+		},
+		"debug": {
+			"frag": "debug.frag",
+			"vert": "debug.vert"
+		},
+		"bullet": {
+			"frag": "bullet.frag",
+			"vert": "bullet.vert"
+		},
+		"diffuse": {
+			"frag": "box.frag",
+			"vert": "box.vert"
+		},
+		"diffuse_vl": {
+			"frag": "box_dpl.frag",
+			"vert": "box_dpl.vert"
+		}
+	}
+}

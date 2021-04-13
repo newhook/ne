@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94006E67-0CCD-4192-A91C-947B61FC394F}</ProjectGuid>
+    <RootNamespace>ge_hello</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/extern/artemis;oct;$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/SFML/include;.;.;$(SolutionDir)/extern/assimp/include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;SFML_STATIC;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/extern/SFML/extlibs/libs-msvc/x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;openal32.lib;sndfile.lib;winmm.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/extern/artemis;oct;$(SolutionDir)/ge/src;$(SolutionDir)/extern/glm/;$(SolutionDir)/extern/glew-1.10.0/include;$(SolutionDir)/extern/bullet/src;$(SolutionDir)/extern/SFML/include;$(SolutionDir)/extern/SFML/include;.;$(SolutionDir)/extern/assimp/include</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>GLEW_STATIC;SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;openal32.lib;sndfile.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;sfml-audio.lib;sfml-graphics.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/extern/SFML/extlibs/libs-msvc/x86</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\extern\artemis\artemis.vcxproj">
+      <Project>{2c74e23b-de4d-4868-8169-14165cd82c7d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\assimp\code\assimp.vcxproj">
+      <Project>{8f0530a8-5c40-409d-ac5c-b255a13020d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\bullet\build\vs2010\BulletCollision.vcxproj">
+      <Project>{a35d3ad2-d199-314b-a39a-01f08712a395}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\bullet\build\vs2010\BulletDynamics.vcxproj">
+      <Project>{cdd0b7fa-1392-a844-bce9-4d83c4a1e2a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\bullet\build\vs2010\LinearMath.vcxproj">
+      <Project>{c9d350a2-b4e6-d647-9608-5a435d3eaaa5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\glew-1.10.0\build\vc10\glew_static.vcxproj">
+      <Project>{664e6f0d-6784-4760-9565-d54f8eb1edf4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extern\SFML\sfml\sfml.vcxproj">
+      <Project>{6d829b49-9434-46ea-b600-f70b68d0ef80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\ge\ge.vcxproj">
+      <Project>{94bf169e-c425-4ef7-b1bb-0413530426fd}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraBehavior.cpp" />
+    <ClCompile Include="CameraControl.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MouseDrive.cpp" />
+    <ClCompile Include="MouseOrbitZoom.cpp" />
+    <ClCompile Include="oct\Array.cpp" />
+    <ClCompile Include="oct\Octree.cpp" />
+    <ClCompile Include="oct\OctreeAuxiliary.cpp" />
+    <ClCompile Include="oct\OctreeImplementation.cpp" />
+    <ClCompile Include="oct\Vector3r.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="axis.nff" />
+    <None Include="box.frag" />
+    <None Include="box.vert" />
+    <None Include="box_dpl.frag" />
+    <None Include="box_dpl.vert" />
+    <None Include="debug.frag" />
+    <None Include="debug.vert" />
+    <None Include="shaders.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CameraBehavior.h" />
+    <ClInclude Include="CameraControl.h" />
+    <ClInclude Include="MouseDrive.h" />
+    <ClInclude Include="MouseOrbitZoom.h" />
+    <ClInclude Include="oct.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

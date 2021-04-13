@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{53694F24-ADAE-4CFA-813A-A0AEB6E0C770}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\80119172ca258cdad3e9608cb786d3b4\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/generate.stamp.rule;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCXXCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeRCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeSystem.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\CheckTypeSize\SIZEOF_VOID_PTR.c;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Config.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Macros.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindSndfile.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Audio\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Main\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Network\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\System\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Window\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenAL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\System\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Window\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Network\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Audio\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/generate.stamp.rule;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCXXCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeRCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeSystem.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\CheckTypeSize\SIZEOF_VOID_PTR.c;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Config.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Macros.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindSndfile.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Audio\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Main\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Network\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\System\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Window\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenAL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\System\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Window\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Network\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Audio\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/generate.stamp.rule;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCXXCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeRCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeSystem.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\CheckTypeSize\SIZEOF_VOID_PTR.c;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Config.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Macros.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindSndfile.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Audio\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Main\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Network\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\System\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Window\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenAL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\System\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Window\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Network\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Audio\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\bin\cmake.exe -HC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML -BC:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/generate.stamp.rule;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeCXXCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeRCCompiler.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\3.0.0\CMakeSystem.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\CheckTypeSize\SIZEOF_VOID_PTR.c;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Config.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Macros.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindGLEW.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\cmake\Modules\FindSndfile.cmake;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Audio\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Graphics\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Main\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Network\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\System\CMakeLists.txt;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\src\SFML\Window\CMakeLists.txt;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseArguments.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindFreetype.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindJPEG.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenAL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindOpenGL.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\FindPackageMessage.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Users\matthew\Downloads\cmake-3.0.0-win32-x86\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\System\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Window\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Network\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Graphics\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Audio\CMakeFiles\generate.stamp;C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\80119172ca258cdad3e9608cb786d3b4\ZERO_CHECK.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/build/CMakeFiles/80119172ca258cdad3e9608cb786d3b4/ZERO_CHECK.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\matthew\.babun\cygwin\home\matthew\ssd\ne\extern\SFML\build\CMakeFiles\ZERO_CHECK</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ZERO_CHECK" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

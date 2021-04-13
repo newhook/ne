@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Users/matthew/.babun/cygwin/home/matthew/ssd/ne/extern/SFML/src/SFML/Window/CMakeLists.txt
+C:/Users/matthew/Downloads/cmake-3.0.0-win32-x86/share/cmake-3.0/Modules/FindOpenGL.cmake
+C:/Users/matthew/Downloads/cmake-3.0.0-win32-x86/share/cmake-3.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Users/matthew/Downloads/cmake-3.0.0-win32-x86/share/cmake-3.0/Modules/FindPackageMessage.cmake
+C:/Users/matthew/Downloads/cmake-3.0.0-win32-x86/share/cmake-3.0/Modules/CMakeParseArguments.cmake

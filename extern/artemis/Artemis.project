@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="Artemis" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00040001N0005Debug0000000000000001N0015Dynamic Library0000000000000001N0007Release0000000000000001N0014Static library000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="util">
+      <File Name="src/ImmutableBag.h"/>
+      <File Name="src/BitSize.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="component">
+      <File Name="src/Component.cpp"/>
+      <File Name="src/Component.h"/>
+      <File Name="src/ComponentMapper.h"/>
+      <File Name="src/ComponentType.h"/>
+      <File Name="src/ComponentType.cpp"/>
+      <File Name="src/ComponentTypeManager.h"/>
+      <File Name="src/ComponentTypeManager.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="system">
+      <File Name="src/EntityProcessingSystem.cpp"/>
+      <File Name="src/EntityProcessingSystem.h"/>
+      <File Name="src/EntitySystem.cpp"/>
+      <File Name="src/EntitySystem.h"/>
+      <File Name="src/Entity.cpp"/>
+      <File Name="src/Entity.h"/>
+      <File Name="src/World.cpp"/>
+      <File Name="src/World.h"/>
+      <File Name="src/DelayedEntitySystem.h"/>
+      <File Name="src/DelayedEntitySystem.cpp"/>
+      <File Name="src/DelayedEntityProcessingSystem.h"/>
+      <File Name="src/DelayedEntityProcessingSystem.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="manager">
+      <File Name="src/EntityManager.cpp"/>
+      <File Name="src/EntityManager.h"/>
+      <File Name="src/SystemBitManager.cpp"/>
+      <File Name="src/SystemBitManager.h"/>
+      <File Name="src/SystemManager.cpp"/>
+      <File Name="src/SystemManager.h"/>
+      <File Name="src/TagManager.h"/>
+      <File Name="src/TagManager.cpp"/>
+      <File Name="src/GroupManager.cpp"/>
+      <File Name="src/GroupManager.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Dynamic Library"/>
+  <Dependencies Name="Release"/>
+  <Dependencies Name="Static library"/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall;-std=c++0x;" C_Options="-g;-O0;-Wall;" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="src"/>
+        <Preprocessor Value="_ARTEMIS_DEBUG"/>
+      </Compiler>
+      <Linker Options="-static-libstdc++;-pg;" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes">
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>C:\MinGW\lib\gcc\mingw32\4.6.2\include\c++\tr1</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Dynamic Library" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++11;" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="src"/>
+      </Compiler>
+      <Linker Options="-O3;" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/artemis.dll" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">move $(ProjectPath)\Release\artemis.dll $(ProjectPath)\bin</Command>
+        <Command Enabled="yes">gendef - $(ProjectPath)\bin\artemis.dll &gt; $(ProjectPath)\bin\artemisdll.def</Command>
+        <Command Enabled="yes">dlltool -d $(ProjectPath)\bin\artemisdll.def -l $(ProjectPath)\bin\libartemis.a</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes">
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>C:\MinGW\lib\gcc\mingw32\4.6.2\include\c++\tr1</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall;-std=c++0x;-DNDEBUG" C_Options="-O2;-Wall" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="src"/>
+      </Compiler>
+      <Linker Options="-static-libstdc++;" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Static library" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++11;" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+        <IncludePath Value="src"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/libartemis.a" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild>
+        <Command Enabled="yes">move $(ProjectPath)\Release\libartemis.a $(ProjectPath)\bin</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes">
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>C:\MinGW\lib\gcc\mingw32\4.6.2\include\c++\tr1</SearchPaths>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
